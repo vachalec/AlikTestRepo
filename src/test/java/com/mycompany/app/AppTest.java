@@ -71,7 +71,7 @@ public class AppTest {
         Bit b1 = Bit.newOne();
         assertTrue(b1.value());
         Bit b0 = Bit.newZero();
-        assertFalse(b0.value());
+        assertTrue(b0.value());
 
     }
 
@@ -80,7 +80,7 @@ public class AppTest {
         Bit b1 = Bit.newOne();
         assertTrue(b1.value());
         Bit b0 = Bit.newZero(); 
-        assertFalse(b0.value());
+        assertTrue(b0.value());
 
 		
 		
