@@ -143,8 +143,8 @@ public class AppTest {
         RawBits rb = new RawBits();
         assertTrue(true);
     }
-     @Test
-   /** public void rangeTest(){
+   /**   @Test
+   public void rangeTest(){
          RangeEncoder re = new RangeEncoder(1,1);
         assertTrue(true);
     }*/
