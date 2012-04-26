@@ -4,15 +4,18 @@ package com.mycompany.app;
 
 //import java.util.BitSet;
 
+import cz.catmeows.dragonpacker.Decoder;
+import cz.catmeows.dragonpacker.RangeEncoder;
+import cz.catmeows.dragonpacker.RawBits;
 import static org.junit.Assert.*;
 
 import org.testng.annotations.*;
 
 
 /**
- * aaaaasaassssaUnitdsddsawerwers test for simple  App.AAA 
+ * aaaaasaasssssaUnitdsddsawerwers test for simple  App.AAA 
 *wer we
-*wrwerwe
+*wrwerwfdfe
 *wrwerwer
 *werwerewr
 *wrwerew
@@ -71,7 +74,7 @@ public class AppTest {
         Bit b1 = Bit.newOne();
         assertTrue(b1.value());
         Bit b0 = Bit.newZero();
-        assertTrue(b0.value());
+        assertFalse(b0.value());
 
     }
 
@@ -80,7 +83,7 @@ public class AppTest {
         Bit b1 = Bit.newOne();
         assertTrue(b1.value());
         Bit b0 = Bit.newZero(); 
-        assertTrue(b0.value());
+        assertFalse(b0.value());
 
 		
 		
@@ -122,7 +125,36 @@ public class AppTest {
 
     }
 
+	@Test
+	public void dummyTest(){
+	assertTrue(false);
+	}
+@Test
+	public void dummyTest1(){
+	assertTrue(false);
+	}
+@Test
+	public void dummyTest2(){
+	assertTrue(false);
+	}
 
+    @Test
+    public void testRawBits(){
+        RawBits rb = new RawBits();
+        assertTrue(true);
+    }
+     @Test
+    public void rangeTest(){
+         RangeEncoder re = new RangeEncoder(1,1);
+        assertTrue(true);
+    }
 
+   @Test
+    public void testDecoder(){
+       Decoder d = new Decoder(new int[6]);
+       int[] i = new int[1];
+       assertTrue(d.decode().length == i.length);
+
+    }
 
 }
